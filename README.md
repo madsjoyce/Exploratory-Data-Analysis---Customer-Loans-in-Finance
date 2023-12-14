@@ -1,5 +1,5 @@
 # <ins> EXPLORATORY DATA ANALYSIS - CUSTOMER LOANS IN FINANCE
-
+![Alt text](Finance.jpeg)
 ## Table of Contents 
 1. Description of the Project
 2. Installation Instructions
