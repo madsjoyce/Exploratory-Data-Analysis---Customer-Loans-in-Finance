@@ -82,4 +82,12 @@ if __name__ == "__main__":
 
 # Read the data from the csv file.
 df = pd.read_csv("loan_payments_data.csv")
-print(df)
+try:
+    df = pd.read_csv("loan_payments_data.csv")
+    print(df)
+except FileNotFoundError:
+    print("CSV file not found. Make sure the file path is correct.")
+except pd.errors.EmptyDataError:
+    print("The CSV file is empty.")
+except Exception as e:
+    print(f"An error occurred: {e}")
