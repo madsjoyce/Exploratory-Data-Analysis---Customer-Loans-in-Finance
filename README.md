@@ -1,7 +1,5 @@
 # <ins> EXPLORATORY DATA ANALYSIS - CUSTOMER LOANS IN FINANCE
 
-![Finance Gif](<iframe src="https://giphy.com/embed/NyniJ2Nf2ZzlE8GYsl" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/JustStartInvesting-NyniJ2Nf2ZzlE8GYsl">via GIPHY</a></p>)
-
 ## Table of Contents 
 1. Description of the Project
 2. Installation Instructions
