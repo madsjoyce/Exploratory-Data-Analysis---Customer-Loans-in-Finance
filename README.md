@@ -1,6 +1,6 @@
 # <ins> EXPLORATORY DATA ANALYSIS - CUSTOMER LOANS IN FINANCE
 
-![Finance Picture](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wealthandfinance-news.com%2Fthe-history-of-finance-and-what-the-digital-future-holds%2F&psig=AOvVaw2wSUq2owXdhYghMfO60bDZ&ust=1702637517307000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKjy7pfhjoMDFQAAAAAdAAAAABAD)
+![Finance Gif](<iframe src="https://giphy.com/embed/NyniJ2Nf2ZzlE8GYsl" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/JustStartInvesting-NyniJ2Nf2ZzlE8GYsl">via GIPHY</a></p>)
 
 ## Table of Contents 
 1. Description of the Project
