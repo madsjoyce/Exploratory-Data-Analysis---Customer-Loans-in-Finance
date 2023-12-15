@@ -1,10 +1,6 @@
-import pandas as pd 
+#import pandas as pd 
 
 class DataFrameTransform:
-    def null_count_percentage (self):
-        null_count = self.df.isnull().sum()
-        percentage_null = (null_count / len(self.df)) * 100
-        return pd.DataFrame({'Null Count': null_count, 'Percentage Null': percentage_null})
     
     def drop_columns(df, threshold=30):
         # Drop columns with missing values exceeding the threshold
