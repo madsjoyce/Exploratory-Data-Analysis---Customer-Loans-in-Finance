@@ -99,9 +99,29 @@ class Plotter:
           plt.figure(figsize=(6, 6))
     
           # Visualise skewness before transformations
-          sns.histplot(data=df[skewed_columns], kde=True)
+          sns.histplot(data=df[skewed_columns], bins=20, kde=False)
           plt.title("Skewness Before Transformations")
     
+          plt.show()
+
+     def visualise_original_skewness_histogram(df, skewed_columns):
+          """
+          Visualise skewness of columns in the original DataFrame before transformations.
+
+          Parameters:
+          - df: original pandas.DataFrame
+            Original DataFrame before transformations.
+          - skewed_columns: list of str
+            Columns identified as skewed.
+          """
+          plt.figure(figsize=(6, 6))
+
+          # Visualise skewness before transformations using histogram
+          for column in skewed_columns:
+              plt.hist(df[column], bins=20, alpha=0.5, label=column)
+
+          plt.title("Skewness Before Transformations")
+          plt.legend()
           plt.show()
 
      def visualise_transformed_skewness(df, skewed_columns):
@@ -117,9 +137,29 @@ class Plotter:
           plt.figure(figsize=(6, 6))
     
           # Visualize skewness after transformations
-          sns.histplot(data=df[skewed_columns], kde=True)
+          sns.histplot(data=df[skewed_columns], kde=False)
           plt.title("Skewness After Transformations")
     
+          plt.show()
+    
+     def visualise_transformed_skewness_histogram(df, skewed_columns):
+          """
+          Visualise skewness of columns in the original DataFrame before transformations.
+
+          Parameters:
+          - df: original pandas.DataFrame
+            Original DataFrame before transformations.
+          - skewed_columns: list of str
+            Columns identified as skewed.
+          """
+          plt.figure(figsize=(6, 6))
+
+          # Visualise skewness before transformations using histogram
+          for column in skewed_columns:
+              plt.hist(df[column], bins=20, alpha=0.5, label=column)
+
+          plt.title("Skewness After Transformations")
+          plt.legend()
           plt.show()
 
      def visualise_boxplots(df):
@@ -155,4 +195,4 @@ class Plotter:
             plt.title("Correlation Matrix Heatmap (Numerical Data)")
             plt.show()
         else:
-            print("No numerical columns to visualize.")
+            print("No numerical columns to visualise.")
