@@ -34,12 +34,16 @@ To install:
 - Install Python PyYAML Package by entering the following command into your terminal: ```pip install PyYAML```
 - Install Python Pandas Package by entering the following command into your terminal:```pip install pandas```
 
-**Step 4.** Run the db_utilis.py file to load the loan_payments.data file.
-- Enter the folowing command into your terminal: ```python db_utilis.py```
-- Verify that the 'loan_payments_data.csv' file has loaded into your 'exploratory_data_analysis' directory on your local machine.
+**Step 4.** Execute all .py files in the following order to ensure all classes are ready to run for analysis.
+1. db_utilis.py
+2. DataTransform.py
+3. DataFrameInfo.py
+4. Plotter.py
+5. DataFrameTransform.py 
 
 **Step 5.** Ready for Analysis.
-- With the data successfully loaded, you are now ready to read and analyse it for your exploratory data analysis tasks.
+- With the classes successfully loaded, you can now go through the .py files' corresponding notebook, in the same order, and execute the code cells to start to visualise the data. 
+- Please note, that you will need to run the top boxes in both Milestone_3 and Milestone_4 notebooks to ensure that the database is correctly transformed and ready for analysis.
 
 ### 3. Usage Instructions
 This project's intended use is to load loan payment data onto your local machine so that you can perform exploratory data analysis. 
@@ -47,8 +51,18 @@ This project's intended use is to load loan payment data onto your local machine
 ### 4. File Structure of the Project
 - **credentials.yaml** - This file includes all the credentials needed to load the dataframe from AWS RDS.
 - **.gitignor** - This is a security measure. It includes the 'credentials.yaml' file and will stop these private credentials being pushed to GitHub.
+- **LICENCE.txt** - This contains the licensing information for this repository.
+- **Finance.jpeg** - This contains an image I have used in this README.md file.
 - **db_utilis.py** - This contains the code needed to fetch and load the data from AWS RDS.
-- **load_payments_data.csv** - This conains all the markdown information needed to run this project.
+- **loan_payments_data.csv** - This conains all the markdown information needed to run this project.
+- **DataTransform.py** - This contains the DataTransform class can the loan_payment_data dataframe dataframe columns to have suitable datatypes.
+- **DataTransform.ipynb** - This notebook contains the code to test the DataTransform class on the loan_payments_data dataframe.
+- **DataFrameInfo.py** - This file contains the class DataDrameInfo. Its code helps to describe null values and unique values within the dataframe.
+- **DataFrameInfo.ipynb** - This notebook contains code that uses the DataFrameInfo class to find out various information regarding the dataframe.
+- **Plotter.py** - This python file contains the class Plotter, which has useful code to help plot and visualise information about the dataframe.
+- **DataFrameTransform.py** - This contains the class DataFrameTransform which contains the code to drop columns, impute columns, remove outliers and remove highly correlated columns.
+- **Milestone_3.ipynb** - Contains the code that performs EDA on the dataframe using both the Plotter and the DataFrameTransform classes.
+- **Milestone_4.ipynb** - Contains the code using all other classes to analyse and visualise both historical and future aspects of the transformed_df. 
 
 ### 5. License Information
 Please click on the link below for license information:
