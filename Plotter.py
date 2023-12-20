@@ -81,6 +81,16 @@ class Plotter:
        return skewed_columns[skewed_columns].index.tolist()
 
      def apply_best_transformation(df, skewed_columns):
+       ''' 
+       Applies transormation to skewed columns.
+
+       Parameters:
+        - df: pandas.DataFrame
+        - Skewed_columns: skewed columns identified by identify_skewed_columns.
+
+        Returns:
+        pandas.DataFrame
+       '''
        for column in skewed_columns:
            if pd.api.types.is_numeric_dtype(df[column]):
                df[column] = np.log1p(df[column])

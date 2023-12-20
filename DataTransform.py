@@ -6,6 +6,12 @@ class DataTransform:
     '''
     
     def __init__(self, df):
+        '''
+        Initialises the DataTransform object.
+
+        Parameters:
+        - df (pd.DataFrame): The input DataFrame to be transformed.
+        '''
         self.df = df
 
     def convert_to_numeric(self, columns):
@@ -13,7 +19,6 @@ class DataTransform:
         Convert specified columns to numeric format.
 
         Parameters:
-        - df: pandas.DataFrame
         - columns: list of str, columns to be converted
 
         Returns:
@@ -28,7 +33,6 @@ class DataTransform:
         Convert specified columns to datetime format.
 
         Parameters:
-        - df: pandas.DataFrame
         - columns: list of str, columns to be converted
 
         Returns:
@@ -43,7 +47,6 @@ class DataTransform:
         Convert specified columns to categorical format
         
         Parameters:
-        - df: pandas.DataFrame
         - columns: list of str, columns to be converted
         Returns:
         pandas.DataFrame
@@ -58,7 +61,6 @@ class DataTransform:
         Remove excess symbols from specified columns.
 
         Parameters:
-        - df: pandas.DataFrame
         - columns: list of str, columns to be processed
 
         Returns:
@@ -69,10 +71,27 @@ class DataTransform:
         return self.df
 
     def convert_to_boolean(self, columns):
+        '''
+        Convert specified columns to boolean format
+        
+        Parameters:
+        - columns: list of str, columns to be converted
+
+        Returns:
+        pandas.DataFrame
+        '''
         self.df[columns] = self.df[columns].astype(bool)
         return self.df
     
     def convert_categorical_to_numeric(self, columns):
+        '''
+        Convert categorical columns to numerical format
+        
+        Parameters:
+        - columns: list of str, columns to be converted
 
+        Returns:
+        pandas.DataFrame
+        '''
         self.df[columns], pd.factorize(self.df[columns])
         return self.df

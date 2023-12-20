@@ -3,19 +3,45 @@ import numpy as np
 class DataFrameTransform:
     
     def null_percentage(df):
-        # Calculate the percentage of missing values in each column
+        """
+        Calculate the percentage of missing values in each column of the DataFrame.
+
+        Parameters:
+        - df: pandas.DataFrame
+
+        Returns:
+        null_percentage: Percentage of missing values for each column.
+        """        
         null_percentage = (df.isnull().sum() / len(df)) * 100
         return null_percentage
     
     def drop_columns(df, threshold=50):
-        # Drop columns with missing values exceeding the threshold
+        """
+        Drop columns with missing values exceeding the specified threshold.
+
+        Parameters:
+        - df: pandas.DataFrame
+        - threshold: percentage threshold for dropping columns (default: 50)
+
+        Returns:
+        pandas.DataFrame: DataFrame with specified columns dropped.
+        """
         null_percentage = DataFrameTransform.null_percentage(df)
         columns_to_drop = null_percentage[null_percentage > threshold].index
         df = df.drop(columns=columns_to_drop)
         return df
 
     def impute_mean(df, columns=None):
-    # If specific columns are provided, only impute those columns
+        """
+        Impute missing values with the mean value for specified columns in the DataFrame.
+
+        Parameters:
+        - df: pandas.DataFrame
+        - columns: columns to impute (default: None)
+
+        Returns:
+        pandas.DataFrame: DataFrame with missing values imputed using the mean.
+        """
         if columns is not None:
             if not set(columns).issubset(df.columns):
                 raise ValueError("Invalid column names provided.")
@@ -27,6 +53,16 @@ class DataFrameTransform:
         return df
 
     def impute_median(df, columns=None):
+        """
+        Impute missing values with the median value for specified columns in the DataFrame.
+
+        Parameters:
+        - df: pandas.DataFrame
+        - columns: columns to impute (default: None)
+
+        Returns:
+        pandas.DataFrame: DataFrame with missing values imputed using the median.
+        """
         if columns is not None:
             if not set(columns).issubset(df.columns):
                 raise ValueError("Invalid column names provided.")
@@ -38,6 +74,16 @@ class DataFrameTransform:
         return df
     
     def impute_mode(df, columns=None):
+        """
+        Impute missing values with the mode value for specified columns in the DataFrame.
+
+        Parameters:
+        - df: pandas.DataFrame
+        - columns: columns to impute (default: None)
+
+        Returns:
+        pandas.DataFrame: DataFrame with missing values imputed using the mode.
+        """
         if columns is not None:
             if not set(columns).issubset(df.columns):
                 raise ValueError("Invalid column names provided.")
@@ -56,10 +102,10 @@ class DataFrameTransform:
 
         Parameters:
         - df: pandas.DataFrame
-        - columns: list of str, columns to remove outliers from
+        - columns:columns to remove outliers from
 
         Returns:
-        pandas.DataFrame
+        pandas.DataFrame: DataFrame with outliers removed.
         """
         for column in columns:
             # Calculate IQR (Interquartile Range)
@@ -81,7 +127,7 @@ class DataFrameTransform:
 
         Parameters:
         - df: pandas.DataFrame
-        - threshold: float, correlation threshold to consider
+        - threshold: correlation threshold to consider
 
         Returns:
         List of tuples containing highly correlated column pairs.
@@ -107,7 +153,10 @@ class DataFrameTransform:
 
         Parameters:
         - df: pandas.DataFrame
-        - correlated_columns: highly correlated column pairs
+        - highly_correlated_columns: highly correlated column pairs
+
+        Returns:
+        pandas.DataFrame: DataFrame with highly correlated columns removed.
         """
         for col1, col2 in highly_correlated_columns:
             # Decide which column to keep (e.g., based on domain knowledge or preference)
