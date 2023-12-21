@@ -57,7 +57,7 @@ To install:
 - Please note, that you will need to run the top boxes in both Milestone_3 and Milestone_4 notebooks to ensure that the database is correctly transformed and ready for analysis.
 
 ### 3. Usage Instructions
-This project's intended use is to load loan payment data onto your local machine so that you can perform exploratory data analysis. 
+This project's intended use is to load loan payment data onto your local machine and perform exploratory data analysis on one of its dataframes. 
 
 ### 4. File Structure of the Project
 - **credentials.yaml** - This file includes all the credentials needed to load the dataframe from AWS RDS.
