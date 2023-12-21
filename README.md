@@ -42,7 +42,7 @@ To install:
 5. DataFrameTransform.py 
 
 **Step 5.** Ready for Analysis.
-- With the classes successfully loaded, you can now go through the .py files' corresponding notebook, in the same order, and execute the code cells to start to visualise the data. 
+- With the classes successfully loaded, you can now go through the .py files' corresponding notebook, in the same order, and execute the code cells to start to transform and visualise the data. 
 - Please note, that you will need to run the top boxes in both Milestone_3 and Milestone_4 notebooks to ensure that the database is correctly transformed and ready for analysis.
 
 ### 3. Usage Instructions
@@ -56,7 +56,7 @@ This project's intended use is to load loan payment data onto your local machine
 - **db_utilis.py** - This contains the code needed to fetch and load the data from AWS RDS, by creating the RDSDatabaseConnector class.
 - **loan_payments_data.csv** - This conains all the markdown information needed to run this project.
 - **DataTransform.py** - This contains the DataTransform class can the loan_payment_data dataframe dataframe columns to have suitable datatypes.
-- **DataTransform.ipynb** - This notebook contains the code to test the DataTransform class on the loan_payments_data dataframe.
+- **DataTransform.ipynb** - This notebook contains the code to test the DataTransform class on the loan_payments_data dataframe and create the transformed_df.csv file.
 - **DataFrameInfo.py** - This file contains the class DataDrameInfo. Its code helps to describe null values and unique values within the dataframe.
 - **DataFrameInfo.ipynb** - This notebook contains code that uses the DataFrameInfo class to find out various information regarding the dataframe.
 - **Plotter.py** - This python file contains the class Plotter, which has useful code to help plot and visualise information about the dataframe.
