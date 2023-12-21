@@ -34,14 +34,18 @@ To install:
 - Install Python PyYAML Package by entering the following command into your terminal: ```pip install PyYAML```
 - Install Python Pandas Package by entering the following command into your terminal:```pip install pandas```
 
-**Step 4.** Execute all .py files in the following order to ensure all classes are ready to run for analysis.
+**Step 4.** Create a credentials.yaml file to store your database credentials.
+- If using GitHub, remember to add this file to your .gitignore file in your repository, as you don't want your credentials being pushed to GitHub for security reasons.
+- You will need the following credentials in the .yaml file: RDS_HOST, RDS_PASSWORD, RDS_USER, RDS_DATABASE, RDS_PORT.
+
+**Step 5.** Execute all .py files in the following order to ensure all classes are ready to run for analysis.
 1. db_utilis.py
 2. DataTransform.py
 3. DataFrameInfo.py
 4. Plotter.py
 5. DataFrameTransform.py 
 
-**Step 5.** Ready for Analysis.
+**Step 6.** Ready for Analysis.
 - With the classes successfully loaded, you can now go through the .py files' corresponding notebook, in the same order, and execute the code cells to start to transform and visualise the data. 
 - Please note, that you will need to run the top boxes in both Milestone_3 and Milestone_4 notebooks to ensure that the database is correctly transformed and ready for analysis.
 
