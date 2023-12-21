@@ -33,9 +33,9 @@ To install:
 **Step 3.** Ensure you have the correct packages installed to your local machine:
 - Install Python PyYAML Package by entering the following command into your terminal: ```pip install PyYAML```
 - Install Python Pandas Package by entering the following command into your terminal:```pip install pandas```
-- Install Python Numpy Package by entering the following command into your terminal```pip install numpy```
-- Install Python Matplotliib Package by entering the following command into your terminal```pip install matplotlib```
-- Install Python Seaborn Package by entering the following command into your terminal```pip install seaborn```
+- Install Python Numpy Package by entering the following command into your terminal:```pip install numpy```
+- Install Python Matplotliib Package by entering the following command into your terminal:```pip install matplotlib```
+- Install Python Seaborn Package by entering the following command into your terminal:```pip install seaborn```
 
 **Step 4.** Create a credentials.yaml file to store your database credentials.
 - If using GitHub, remember to add this file to your .gitignore file in your repository, as you don't want your credentials being pushed to GitHub for security reasons.
