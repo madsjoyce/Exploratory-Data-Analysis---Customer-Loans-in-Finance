@@ -28,7 +28,7 @@ To install:
 : ```git clone https://github.com/madsjoyce/Exploratory-Data-Analysis--Customer-Loans-in-Finance.git```.
 
  **Step 2.** Navigate to the project directory.
-     - Navigate to the project directory by entering the following command into your terminal: ```cd exploratory_data_analysis```.
+- Navigate to the project directory by entering the following command into your terminal: ```cd exploratory_data_analysis```.
 
 **Step 3.** Ensure you have the correct packages installed to your local machine:
 - Install Python PyYAML Package by entering the following command into your terminal: ```pip install PyYAML```
