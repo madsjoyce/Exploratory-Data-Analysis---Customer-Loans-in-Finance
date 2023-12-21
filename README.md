@@ -49,7 +49,11 @@ To install:
 5. DataFrameTransform.py 
 
 **Step 6.** Ready for Analysis.
-- With the classes successfully loaded, you can now go through the .py files' corresponding notebook, in the same order, and execute the code cells to start to transform and visualise the data. 
+- With the classes successfully loaded, you can now go through the .ipynb file's and execute all the cells in this order of notebooks:
+1. DataTransform.ipynb
+2. DataFrameInfo.ipynb
+3. Milestone_3.ipynb
+4. Milestone_4.ipynb
 - Please note, that you will need to run the top boxes in both Milestone_3 and Milestone_4 notebooks to ensure that the database is correctly transformed and ready for analysis.
 
 ### 3. Usage Instructions
