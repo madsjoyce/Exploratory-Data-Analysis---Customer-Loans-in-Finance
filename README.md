@@ -68,10 +68,10 @@ This project's intended use is to load loan payment data onto your local machine
 - **loan_payments_data.csv** - This is the original database that will be transformed and analysed.
 - **DataTransform.py** - This contains the DataTransform class that can transform the loan_payment_data dataframe columns' to have suitable datatypes.
 - **DataTransform.ipynb** - This notebook contains the code to test the DataTransform class on the loan_payments_data dataframe and create the transformed_df.csv file.
-- **DataFrameInfo.py** - This file contains the class DataDrameInfo. Its code helps to describe null values and unique values within the dataframe.
+- **DataFrameInfo.py** - This file contains the class DataFrameInfo. Its code helps to describe null values and unique values within the dataframe.
 - **DataFrameInfo.ipynb** - This notebook contains code that uses the DataFrameInfo class to find out various information regarding the dataframe.
 - **Plotter.py** - This python file contains the class Plotter, which has useful code to help plot and visualise information about the dataframe.
-- **DataFrameTransform.py** - This contains the class DataFrameTransform which contains the code to drop columns, impute columns, remove outliers and remove highly correlated columns.
+- **DataFrameTransform.py** - This contains the class DataFrameTransform which contains the code to drop columns and impute column with missing values. It can also remove both highly correlated columns and outliers.
 - **Milestone_3.ipynb** - Contains the code that performs EDA on the dataframe using both the Plotter and the DataFrameTransform classes.
 - **Milestone_4.ipynb** - Contains the code using all other classes to analyse and visualise both historical and future aspects of the transformed_df. 
 
