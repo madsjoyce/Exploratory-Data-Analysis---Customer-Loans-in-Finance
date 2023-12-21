@@ -64,7 +64,7 @@ This project's intended use is to load loan payment data onto your local machine
 - **.gitignor** - This is a security measure. It includes the 'credentials.yaml' file and will stop these private credentials being pushed to GitHub.
 - **LICENCE.txt** - This contains the licensing information for this repository.
 - **Finance.jpeg** - This contains an image I have used in this README.md file.
-- **db_utilis.py** - This contains the code needed to fetch and load the data from AWS RDS, by creating the RDSDatabaseConnector class.
+- **db_utilis.py** - This contains the code needed to fetch and load the data from AWS RDS using your credentials.yaml file.
 - **loan_payments_data.csv** - This is the original database that will be transformed and analysed.
 - **DataTransform.py** - This contains the DataTransform class that can transform the loan_payment_data dataframe columns' to have suitable datatypes.
 - **DataTransform.ipynb** - This notebook contains the code to test the DataTransform class on the loan_payments_data dataframe and create the transformed_df.csv file.
