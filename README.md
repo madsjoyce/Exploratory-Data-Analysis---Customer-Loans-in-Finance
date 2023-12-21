@@ -49,7 +49,7 @@ To install:
 5. DataFrameTransform.py 
 
 **Step 6.** Ready for Analysis.
-- With the classes successfully loaded, you can now go through the .ipynb file's and execute all the cells in this order of notebooks:
+- With the classes successfully loaded, you can now go through the .ipynb files and execute all the cells in this order of notebooks:
 1. DataTransform.ipynb
 2. DataFrameInfo.ipynb
 3. Milestone_3.ipynb
