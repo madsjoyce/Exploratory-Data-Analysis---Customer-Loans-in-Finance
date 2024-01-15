@@ -52,8 +52,8 @@ To install:
 - With the classes successfully loaded, you can now go through the .ipynb files and execute all the cells in this order of notebooks:
 1. DataTransform.ipynb
 2. DataFrameInfo.ipynb
-3. Milestone_3.ipynb
-4. Milestone_4.ipynb
+3. Performing_EDA.ipynb
+4. AnalysisAndVisualisation.ipynb.ipynb
 - Please note, that you will need to run the top boxes in both Milestone_3 and Milestone_4 notebooks to ensure that the database is correctly transformed and ready for analysis.
 
 ### 3. Usage Instructions
@@ -72,8 +72,8 @@ This project's intended use is to load loan payment data onto your local machine
 - **DataFrameInfo.ipynb** - This notebook contains code that uses the DataFrameInfo class to find out various information regarding the dataframe.
 - **Plotter.py** - This python file contains the class Plotter, which has useful code to help plot and visualise information about the dataframe.
 - **DataFrameTransform.py** - This contains the class DataFrameTransform which contains the code to drop columns and impute column with missing values. It can also remove both highly correlated columns and outliers.
-- **Milestone_3.ipynb** - Contains the code that performs EDA on the dataframe using both the Plotter and the DataFrameTransform classes.
-- **Milestone_4.ipynb** - Contains the code using all other classes to analyse and visualise both historical and future aspects of the transformed_df. 
+- **Performing_EDA.ipynb** - Contains the code that performs EDA on the dataframe using both the Plotter and the DataFrameTransform classes.
+- **AnalysisAndVisualisation.ipynb.ipynb** - Contains the code using all other classes to analyse and visualise both historical and future aspects of the transformed_df. 
 
 ### 5. License Information
 Please click on the link below for license information:
